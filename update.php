@@ -2,7 +2,8 @@
 require("header.html");
 require ("menu.html");
 
-if(isset($_REQUEST['sub'])){
+if(isset($_REQUEST['sub']))
+{
     $host = "localhost";
     $user = "root";
     $pass = "";
