@@ -11,19 +11,8 @@
 
         require("header.html");
         require("menu.html");
-        
-        ?>    
-        <div class="content">
-            <p>Hello World and 
-            <?php
-                print($_SESSION["login"]);
-            ?>
-            </p>
-            <a class="add" href="?exit">Exit</a>
-        </div>
-        <?php
+        require("content.php");
         require("footer.html");
-        
     }
     else
     {

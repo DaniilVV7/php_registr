@@ -35,12 +35,11 @@
     }
     ?>
 
-    <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog">
+    <div    tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content rounded-5 shadow" >
                 <div class="modal-header p-5 pb-4 border-bottom-0">
                     <h2 class="fw-bold mb-0">Ты заходи если чё</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-5 pt-0">
                     <form class action="#">
