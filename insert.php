@@ -4,13 +4,8 @@ require ("menu.html");
 
 if(isset($_REQUEST['sub']))
 {
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "users";
-
-    $con = mysqli_connect($host, $user, $pass) or die ("no connection");
-    mysqli_select_db($con, $db) or die("no db");
+    session_start();
+    require_once 'db.php';
 
     $delo= $_REQUEST['delo'];
 

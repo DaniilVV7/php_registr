@@ -16,6 +16,7 @@ if(isset($_REQUEST['reg1']))
 
     $s="SELECT * FROM `user` WHERE `login`='".$_REQUEST['login']."'";
     $res=mysqli_query($con, $s);
+//!!
     $user=mysqli_fetch_assoc($res);
     if(empty($user))
     {
@@ -47,7 +48,7 @@ require("menu.html");
                     <form class action="#">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control rounded-4" name="login" placeholder="name@example.com">
-                            <label for="floatingInput">Login</label>
+                            <label  for="floatingInput">Login</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="password" class="form-control rounded-4" name="password" placeholder="name@example.com">

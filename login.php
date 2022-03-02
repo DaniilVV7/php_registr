@@ -11,13 +11,7 @@
     }
     if(isset($_REQUEST['send']))
     {
-        $host="localhost";
-        $user="root";
-        $pass="";
-        $db="users";
-
-        $con=mysqli_connect($host, $user, $pass) or die("no connection");
-        mysqli_select_db($con, $db) or die("no db");
+        require_once 'db.php';
 
         $s="SELECT * FROM `user` WHERE `login`='".$_REQUEST['login']."' AND `password`='".$_REQUEST['password']."'";
         $res=mysqli_query($con, $s);

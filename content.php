@@ -1,11 +1,5 @@
 <?php
-$host="localhost";
-$user="root";
-$pass="";
-$db="users";
-
-$con=mysqli_connect($host, $user, $pass) or die("no connection");
-mysqli_select_db($con, $db) or die("no db");
+require_once 'db.php';
 ?>
 <div class="container">
     <a class="link-dark d-flex flex-wrap justify-content-center" style="text-decoration-line: none" href="insert.php">Добавить</a>
